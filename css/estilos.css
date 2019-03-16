@@ -1,0 +1,8 @@
+@font-face {font-family: "Dancing Script";
+            src: url("Dancing Script.otf");}
+
+body {font-family: "Dancing Script"}
+
+.cabecera {background-color: #5b7989;
+           text-align: left; color: white;
+           text-shadow: 2px 2px #02010a;}
