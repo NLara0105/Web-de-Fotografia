@@ -1,8 +1,24 @@
 @font-face {font-family: "Dancing Script";
-            src: url("Dancing Script.otf");}
+            src: url("../fuente/Dancing Script.otf");}
 
 body {font-family: "Dancing Script"}
 
-.cabecera {background-color: #5b7989;
-           text-align: left; color: white;
-           text-shadow: 2px 2px #02010a;}
+header {background: #5b7989;
+        margin-bottom: 20px;
+        width: 100%; overflow: hidden;}
+
+header .cabecera {color: white;
+                  text-shadow: 2px 2px #02010a;
+                  margin-left: 20px;
+                  line-height: 80px; float: left;
+                  font-size: 35px}
+
+header #menu {float: right;
+              margin-right: 20px;
+              line-height: 80px}
+
+header #menu a {display: inline-block;
+                color: white; padding: 10px 20px;
+                line-height: normal;
+                font-size: 22px}
+.actual {text-decoration: none;}
