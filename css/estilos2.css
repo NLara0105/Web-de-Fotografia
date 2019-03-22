@@ -1,0 +1,65 @@
+/*Consideraciones Generales*/
+@font-face {font-family: "Dancing Script";
+            src: url("../fuente/Dancing Script.otf");}
+
+body {font-family: "Dancing Script";
+      background: #02010a;}
+
+.contenido {max-width: 900px; margin: auto;}
+
+img {box-shadow: 2px 2px #02010a;}
+
+/*Cabecera*/
+header {background: #5b7989;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: -1em;
+        animation: header 1s;}
+
+@-webkit-keyframes header {0% {animation-name: slidein; margin-top: 150%}
+                           60% {animation-name: slidein; margin-top: -5%}
+                           100% {animation-name: slidein; margin-top: -0%}}
+
+header .cabecera {color: white;
+                  text-shadow: 2px 2px #02010a;
+                  margin-left: 20px;
+                  line-height: 80px; float: left;
+                  font-size: 35px;}
+
+header #menu {float: right;
+              margin-right: 20px;
+              line-height: 80px}
+
+header #menu a {display: inline-block;
+                color: white; padding: 20px 10px;
+                line-height: normal;
+                font-size: 25px}
+
+@media (max-width:900px)
+        {.contenido {width: 100%}
+        header .cabecera,
+        header #menu {text-align: center; line-height: 40px;width: 100%}
+        header .cabecera {font-size: 50px}}
+
+.actual {text-decoration: none;}
+
+
+
+
+
+/*Footer*/
+footer {border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: #C6d5c5;
+        overflow: hidden;
+        display: flex; flex-direction: row;}
+
+footer div {padding: 0 0 15px 60px; font-size: 1em}
+
+footer div h2 {margin-bottom: 5px}
+
+.redessociales a {text-decoration: none; color: black;}
+
+@media (max-width: 900px)
+        {footer {display: flex; flex-direction: column;}}
