@@ -14,7 +14,12 @@ header {background: #5b7989;
         overflow: hidden;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        margin-bottom: -1em;}
+        margin-bottom: -1em;
+        animation: header 1s;}
+
+@-webkit-keyframes header {0% {animation-name: slidein; margin-top: 150%}
+                           60% {animation-name: slidein; margin-top: -5%}
+                           100% {animation-name: slidein; margin-top: -0%}}
 
 header .cabecera {color: white;
                   text-shadow: 2px 2px #02010a;
@@ -49,11 +54,12 @@ header #menu a {display: inline-block;
 /*Imagenes Secundarias*/
 .second {display: flex; flex-direction: row;
          background: #d5c75f; border: 1px; text-align: center;
-         text-decoration: underline; justify-content: center;}
+         text-decoration: underline; justify-content: center;
+         font-size: 20px;}
 
 .izquierda img, .derecha img {width: 380px; height: 300px}
 
-@media (max-width: 970px)
+@media (max-width: 900px)
           {.second {display: flex; flex-direction: column;
          background: #d5c75f; border: 1px; text-align: center;
          justify-content: center;}
@@ -72,3 +78,19 @@ header #menu a {display: inline-block;
 .derecha img:hover {transition-property: transform, boxshadow;
                     transition-duration: 0.8s;
                     transform: translate(20px, -5px); box-shadow: 2px 2px #82c3a6;}
+
+/*Footer*/
+footer {border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: #C6d5c5;
+        overflow: hidden;
+        display: flex; flex-direction: row;}
+
+footer div {padding: 0 0 15px 60px; font-size: 1em}
+
+footer div h2 {margin-bottom: 5px}
+
+.redessociales a {text-decoration: none; color: black;}
+
+@media (max-width: 900px)
+{footer {display: flex; flex-direction: column;}}
