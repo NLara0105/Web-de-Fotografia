@@ -14,7 +14,6 @@ header {background: #5b7989;
         overflow: hidden;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        margin-bottom: -1em;
         animation: header 1s;}
 
 @-webkit-keyframes header {0% {animation-name: slidein; margin-top: 150%}
@@ -44,9 +43,26 @@ header #menu a {display: inline-block;
 
 .actual {text-decoration: none;}
 
+/*Imagenes de paisaje*/
+section > div {display: flex; flex-direction: row;
+               background: #d5c75f; overflow: hidden;}
 
+.fila1 img, .fila2 img {width: 260px; height: 200px;
+                        justify-content: center; margin: 20px;}
 
+.paisaje2 img {-webkit-filter: blur(10px);
+                filter: blur(10px);}
 
+.paisaje3 img, .paisaje5 img,
+.paisaje7 img {-webkit-filter: grayscale(100%);
+              filter: grayscale(100%);}
+
+.paisaje4 img {-webkit-filter: sepia(90%);
+               filter: sepia(90%);}
+
+@media (max-width: 915px)
+       {section > div {display: flex; flex-direction: column;}
+        .fila1 img, .fila2 img {width: 90%; height: 300px;}}
 
 /*Footer*/
 footer {border-bottom-left-radius: 10px;
